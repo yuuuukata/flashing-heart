@@ -1,0 +1,7 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_get_brightness" id="A=[-4Z$a8F/^W,{K:U;!" disabled="true" x="-69" y="0"/><block type="device_button_event" id=")-!1weRr7Ay[)@E@pM^h" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="playMelody" id="urb1am-^h0|mGAT~hcE="><value name="melody"><shadow type="melody_editor" id="K_[cKlmt6ibg#uGy7@Ro"><field name="melody">"A G A - A G A - "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="uI/f}]xIGq^]d[+E+kAr"><mutation min="40" max="500" label="Tempo" precision="0"/><field name="SLIDER">220</field></shadow></value></block></statement></block><block type="device_forever" id="OVy+4F0eMB`yXd9dVpF;" x="-1" y="162"><statement name="HANDLER"><block type="device_show_leds" id="-Vxa$en1Vj$z|RH=USYG"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        # . # . # 
+        # . # . # 
+        # . # . #
+        `</field></block></statement></block><block type="input_logo_event" id="QgfPP[IR~,5S1yq:Biev" x="278" y="148"><field name="action">TouchButtonEvent.Touched</field><statement name="HANDLER"><block type="music_stop_all_sounds" id="8d2j_yMZ76v/zcQ~6V^6"/></statement></block></xml>
