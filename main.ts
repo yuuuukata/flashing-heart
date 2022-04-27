@@ -1,15 +1,28 @@
-input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    music.stopAllSounds()
-})
-input.onButtonPressed(Button.A, function () {
-    music.playMelody("A G A - A G A - ", 220)
-})
 basic.forever(function () {
     basic.showLeds(`
-        . . . . .
         . # . # .
-        # . # . #
-        # . # . #
-        # . # . #
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #
         `)
+    while (input.lightLevel() == 0) {
+        basic.showLeds(`
+            . # . # .
+            . # . # .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
+    }
+    while (input.buttonIsPressed(Button.A)) {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            # . # . #
+            # . # . #
+            # . # . #
+            `)
+        music.playMelody("A G A - A G A - ", 220)
+    }
 })

@@ -1,7 +1,19 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_get_brightness" id="A=[-4Z$a8F/^W,{K:U;!" disabled="true" x="-69" y="0"/><block type="device_button_event" id=")-!1weRr7Ay[)@E@pM^h" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="playMelody" id="urb1am-^h0|mGAT~hcE="><value name="melody"><shadow type="melody_editor" id="K_[cKlmt6ibg#uGy7@Ro"><field name="melody">"A G A - A G A - "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="uI/f}]xIGq^]d[+E+kAr"><mutation min="40" max="500" label="Tempo" precision="0"/><field name="SLIDER">220</field></shadow></value></block></statement></block><block type="device_forever" id="OVy+4F0eMB`yXd9dVpF;" x="-1" y="162"><statement name="HANDLER"><block type="device_show_leds" id="-Vxa$en1Vj$z|RH=USYG"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="|ewjo?3a9r=EeA|V,J,7" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="5FiwdQ!$?k8S^*)%Bfg*"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field><next><block type="device_while" id="OH-K`pV{X{;r!G^NpKH@"><value name="COND"><shadow type="logic_boolean" id="aVBu`|%[rQp{{#d(q-%C"><field name="BOOL">FALSE</field></shadow><block type="logic_compare" id="VtSNo@JU@YU/TD!#Mqsq"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="izp2DR]Jui#pG{8+~(N[" disabled="true"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="@=`24pJy:rPn+RR-.C!6"/></value><value name="B"><shadow type="math_number" id="TeCCG%K;p5%?d|!HQ/DO"><field name="NUM">0</field></shadow></value></block></value><statement name="DO"><block type="device_show_leds" id="6Tew-P|}Si[RP/iX$_%Q"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement><next><block type="device_while" id="4h82x^V6?G,0#W^piZc5"><value name="COND"><shadow type="logic_boolean" id="GAx|eS{Pg-%nBnsSo2Qr"><field name="BOOL">FALSE</field></shadow><block type="device_get_button2" id="N[_3S[%`n6uwYdK5@N!6"><field name="NAME">Button.A</field></block></value><statement name="DO"><block type="device_show_leds" id="NCw~bb4p4jq#8c_i4-rT"><field name="LEDS">`
         . . . . . 
         . # . # . 
         # . # . # 
         # . # . # 
         # . # . #
-        `</field></block></statement></block><block type="input_logo_event" id="QgfPP[IR~,5S1yq:Biev" x="278" y="148"><field name="action">TouchButtonEvent.Touched</field><statement name="HANDLER"><block type="music_stop_all_sounds" id="8d2j_yMZ76v/zcQ~6V^6"/></statement></block></xml>
+        `</field><next><block type="playMelody" id="urb1am-^h0|mGAT~hcE="><value name="melody"><shadow type="melody_editor" id="K_[cKlmt6ibg#uGy7@Ro"><field name="melody">"A G A - A G A - "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="uI/f}]xIGq^]d[+E+kAr"><mutation min="40" max="500" label="Tempo" precision="0"/><field name="SLIDER">220</field></shadow></value></block></next></block></statement></block></next></block></next></block></statement></block></xml>
